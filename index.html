@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stock Market Portal</h1>
+    </header>
+    <main>
+        <section class="options">
+            <h2>Select an Option</h2>
+            <button onclick="navigateToTrends('buy')">View Buying Options</button>
+            <button onclick="navigateToTrends('sell')">View Selling Options</button>
+        </section>
+        <section class="resources">
+            <h2>Learn More About Stock Markets</h2>
+            <ul>
+                <li><a href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer">Yahoo Finance</a></li>
+                <li><a href="https://www.marketwatch.com/" target="_blank" rel="noopener noreferrer">MarketWatch</a></li>
+                <li><a href="https://www.investopedia.com/" target="_blank" rel="noopener noreferrer">Investopedia</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Stock Market Insights</p>
+    </footer>
+    <script>
+        function navigateToTrends(option) {
+            window.location.href = `trends.html?option=${option}`;
+        }
+    </script>
+</body>
+</html>
